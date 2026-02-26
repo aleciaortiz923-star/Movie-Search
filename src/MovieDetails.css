@@ -1,0 +1,90 @@
+.movie-details-container {
+    padding: 20px;
+    color: #fff;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.back-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.back-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.back-link:hover {
+    color: lightblue;
+}
+
+.movie-details-card {
+    display: flex;
+    align-items: flex-start;
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.movie-details-poster {
+    width: 300px;
+    height: auto;
+}
+
+.movie-details-info {
+    padding: 20px;
+}
+
+.movie-details-title {
+    margin-top: 0;
+}
+
+.recommendations-container {
+    margin-top: 30px;
+}
+
+.recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.imdb-link {
+    color: lightblue;
+    text-decoration: none;
+    position: relative;
+}
+
+.imdb-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.imdb-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
