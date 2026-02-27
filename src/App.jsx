@@ -6,10 +6,15 @@ import ImageWithFallback from './ImageWithFallback';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/movie/:id" element={<MovieDetails />} />
-    </Routes>
+    <div className="page-container">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/movie/:id" element={<MovieDetails />} />
+      </Routes>
+      <footer className="footer">
+        <p>&copy; 2024 Movie Search. All rights reserved.</p>
+      </footer>
+    </div>
   );
 }
 

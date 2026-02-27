@@ -88,3 +88,27 @@
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+@media (max-width: 768px) {
+    .movie-details-card {
+        flex-direction: column;
+    }
+
+    .movie-details-poster {
+        width: 100%;
+    }
+
+    .recommendations-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 590px) {
+    .movie-details-container {
+        padding: 10px;
+    }
+
+    .recommendations-grid {
+        gap: 10px;
+    }
+}
